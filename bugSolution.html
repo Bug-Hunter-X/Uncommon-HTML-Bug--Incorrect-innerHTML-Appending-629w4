@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden.
+  </div>
+  <script>
+    // Correct way: Use insertAdjacentHTML
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', '<p>Added text</p>');
+    // Alternative: Create a new paragraph and append
+    // var newParagraph = document.createElement('p');
+    // var textNode = document.createTextNode('Added text');
+    // newParagraph.appendChild(textNode);
+    // document.getElementById('myDiv').appendChild(newParagraph);
+  </script>
+</body>
+</html>

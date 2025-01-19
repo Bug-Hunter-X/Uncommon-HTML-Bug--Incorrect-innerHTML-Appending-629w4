@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden.
+  </div>
+  <script>
+    // Incorrectly using innerHTML to modify existing content
+    document.getElementById("myDiv").innerHTML = document.getElementById("myDiv").innerHTML + "<p>Added text</p>"; 
+  </script>
+</body>
+</html>
